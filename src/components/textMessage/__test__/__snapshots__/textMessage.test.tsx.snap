@@ -1,0 +1,65 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test SystemMessage Component match friend snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="text-message"
+  >
+    <div
+      class="show-time"
+      data-testid="time"
+    >
+      2021-10-16 15:29
+    </div>
+    <div
+      class="text-message-main"
+    >
+      <div
+        class="avatar"
+      >
+        <img
+          alt=""
+          src="friend_avatar.jpg"
+        />
+      </div>
+      <div
+        class="text-message-main-text"
+      >
+        Hi!我是张三
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Test SystemMessage Component match mySelf snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="text-message"
+  >
+    <div
+      class="show-time"
+      data-testid="time"
+    >
+      2021-10-16 15:29
+    </div>
+    <div
+      class="text-message-main text-message-isSelf"
+    >
+      <div
+        class="text-message-main-text"
+      >
+        写一个类似微信渲染消息流的组件。支持不同类型：文本/图片/系统消息，如加某个人到群组里，撤销消息等。
+      </div>
+      <div
+        class="avatar"
+      >
+        <img
+          alt=""
+          src="self_avatar.png"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

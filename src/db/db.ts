@@ -2,7 +2,7 @@ import FriendAvatar from '../assets/images/friend_avatar.jpg';
 import SelfAvatar from '../assets/images/self_avatar.png';
 import { Message, MessageType, User } from './type';
 
-const friend: User = {
+export const friend: User = {
   id: '19700102',
   avatar: FriendAvatar,
   alias: '小明',
