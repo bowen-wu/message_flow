@@ -3,4 +3,5 @@
 
 .show-time {
   @include fontLineColor(16px, 20px, $systemColor);
+  padding: 16px 0;
 }

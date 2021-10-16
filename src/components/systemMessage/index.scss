@@ -1,2 +1,9 @@
+@import '../../assets/styles/mixin';
+@import '../../assets/styles/variable';
+
 .system-message {
+  &-text {
+    @include fontLineColor(16px, 20px, $systemColor);
+    padding: 12px 0;
+  }
 }

@@ -10,6 +10,7 @@ const SystemMessage = ({ message, lastMessageTime }: MessagePropsBase) => {
   return (
     <div className={sc()}>
       <ShowTime messageTime={message.time} lastMessageTime={lastMessageTime} />
+      <div className={sc('text')}>{message.content}</div>
     </div>
   );
 };
