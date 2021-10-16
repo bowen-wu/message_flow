@@ -6,7 +6,7 @@ import './index.scss';
 
 const sc = scopedClasses('show-time');
 const ShowTimeLimit = 3 * 60 * 1000;
-const Formatting = 'YYYY-MM-DD';
+const Formatting = 'YYYY-MM-DD HH:mm';
 
 interface ShowTimeProps {
   messageTime: number;
@@ -15,7 +15,7 @@ interface ShowTimeProps {
 
 const ShowTime = ({ messageTime, lastMessageTime }: ShowTimeProps) => {
   return (
-    <div className={sc()}>
+    <div className={sc()} data-testid="time">
       {messageTime - lastMessageTime > ShowTimeLimit ? dayjs(messageTime).format(Formatting) : null}
     </div>
   );
