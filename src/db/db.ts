@@ -1,5 +1,5 @@
 import FriendAvatar from '../assets/images/friend_avatar.jpg';
-import SelfAvatar from '../assets/images/self_avatar.jpg';
+import SelfAvatar from '../assets/images/self_avatar.png';
 import { Message, MessageType, User } from './type';
 
 const friend: User = {
@@ -11,7 +11,7 @@ const friend: User = {
   port: 8080
 };
 
-export const self: User = {
+export const mySelf: User = {
   id: '19700101',
   avatar: SelfAvatar,
   alias: '张三',
@@ -25,7 +25,7 @@ export const chatHistory: Message[] = [
     id: '0',
     time: 1634368942485,
     type: MessageType.SYSTEM,
-    content: 'You have added 小明 as your WeChat contact. Start chatting!'
+    content: 'You have added 张三 as your WeChat contact. Start chatting!'
   },
   {
     id: '1',
@@ -36,7 +36,7 @@ export const chatHistory: Message[] = [
   },
   {
     id: '2',
-    user: self,
+    user: mySelf,
     time: 1634369080975,
     type: MessageType.TEXT,
     content:
@@ -58,7 +58,7 @@ export const chatHistory: Message[] = [
   },
   {
     id: '5',
-    user: self,
+    user: mySelf,
     time: 1634370341970,
     type: MessageType.IMAGE,
     content:

@@ -1,0 +1,6 @@
+@import '../../assets/styles/mixin';
+
+.avatar {
+  @include icon(40px, 40px);
+  flex-shrink: 0;
+}
