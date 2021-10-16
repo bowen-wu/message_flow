@@ -17,6 +17,7 @@
         "web-vitals": "^1.0.1"
     },
     "scripts": {
+        "postinstall": "husky install",
         "lint-staged:js": "eslint --ext .js,.jsx,.ts,.tsx",
         "start": "react-scripts start",
         "build": "react-scripts build",
