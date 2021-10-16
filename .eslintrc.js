@@ -14,16 +14,15 @@ module.exports = {
     ecmaFeatures: {
       jsx: true
     },
-    ecmaVersion: 13,
+    ecmaVersion: 12,
     sourceType: 'module'
   },
   plugins: ['react', '@typescript-eslint'],
   rules: {
-    quotes: ['error', 'single', { allowTemplateLiterals: true }],
-    indent: ['error', 2],
+    quotes: ['error', 'single', {allowTemplateLiterals: true}],
     'comma-dangle': ['error', 'never'],
     'react/jsx-indent': ['error', 2],
-    'no-console': ['error', { allow: ['warn', 'error'] }],
+    'no-console': ['error', {allow: ['warn', 'error']}],
     'react/jsx-tag-spacing': [
       'error',
       {
@@ -33,10 +32,11 @@ module.exports = {
         beforeClosing: 'allow'
       }
     ],
-    'object-curly-spacing': ['warn', 'never'],
+    'object-curly-spacing': ['warn', 'always'],
     'react/jsx-indent-props': ['off', 'tab'],
     'import/no-unresolved': 'off',
     'no-unused-vars': 'off',
-    '@typescript-eslint/no-unused-vars': ['error']
+    '@typescript-eslint/no-unused-vars': ['error'],
+    '@typescript-eslint/no-empty-function': ['error', {allow: ['arrowFunctions']}]
   }
 };

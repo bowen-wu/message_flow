@@ -47,7 +47,6 @@
         "@typescript-eslint/eslint-plugin": "^5.0.0",
         "@typescript-eslint/parser": "^5.0.0",
         "commitlint-config-bowen-lint": "^0.1.1",
-        "eslint": "^8.0.1",
         "eslint-plugin-bowen-lint": "^0.1.1",
         "eslint-plugin-jsx-a11y": "^6.4.1",
         "eslint-plugin-react": "^7.26.1",
