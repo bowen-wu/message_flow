@@ -4,41 +4,31 @@
 .text-message {
   $messageRowPadding: 60px;
 
-  &-main {
-    @include flex(flex-start, flex-start);
-    padding-right: $messageRowPadding;
+  &-text {
+    @include fontLineColor(18px, 22px, #333);
+    white-space: normal;
+    padding: 12px 16px;
+    background-color: #fff;
+    border-radius: 4px;
+    margin-left: 12px;
+    @include triangle(right, #fff, 8px);
 
-    &-text {
-      @include fontLineColor(18px, 22px, #333);
-      white-space: normal;
-      padding: 12px 16px;
-      background-color: #fff;
-      border-radius: 4px;
-      margin-left: 12px;
-      @include triangle(right, #fff, 8px);
-
-      &:before {
-        top: 14px;
-        left: 0;
-        transform: translateX(-100%);
-      }
+    &:before {
+      top: 14px;
+      left: 0;
+      transform: translateX(-100%);
     }
 
     &.text-message-isSelf {
-      padding-right: 0;
-      padding-left: $messageRowPadding;
+      margin-left: 0;
+      margin-right: 12px;
+      @include triangle(left, #a9e97a, 8px);
+      background-color: #a9e97a;
 
-      .text-message-main-text {
-        margin-left: 0;
-        margin-right: 12px;
-        @include triangle(left, #a9e97a, 8px);
-        background-color: #a9e97a;
-
-        &:before {
-          left: auto;
-          right: 0;
-          transform: translateX(100%);
-        }
+      &:before {
+        left: auto;
+        right: 0;
+        transform: translateX(100%);
       }
     }
   }

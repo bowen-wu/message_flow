@@ -1,0 +1,22 @@
+@import '../../assets/styles/mixin';
+@import '../../assets/styles/variable';
+
+.user-message {
+  $messageRowPadding: 60px;
+  @include flex(flex-start, flex-start);
+  flex-direction: column;
+
+  &.user-message-isSelf {
+    align-items: flex-end;
+
+    .user-message-main {
+      padding-right: 0;
+      padding-left: $messageRowPadding;
+    }
+  }
+
+  &-main {
+    @include flex(flex-start, flex-start);
+    padding-right: $messageRowPadding;
+  }
+}

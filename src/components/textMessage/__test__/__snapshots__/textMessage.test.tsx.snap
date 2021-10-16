@@ -6,26 +6,30 @@ exports[`Test SystemMessage Component match friend snapshot 1`] = `
     class="text-message"
   >
     <div
-      class="show-time"
-      data-testid="time"
-    >
-      2021-10-16 15:29
-    </div>
-    <div
-      class="text-message-main"
+      class="user-message"
     >
       <div
-        class="avatar"
+        class="show-time"
+        data-testid="time"
       >
-        <img
-          alt=""
-          src="friend_avatar.jpg"
-        />
+        2021-10-16 15:29
       </div>
       <div
-        class="text-message-main-text"
+        class="user-message-main"
       >
-        Hi!我是张三
+        <div
+          class="avatar"
+        >
+          <img
+            alt=""
+            src="friend_avatar.jpg"
+          />
+        </div>
+        <div
+          class="text-message-text"
+        >
+          Hi!我是张三
+        </div>
       </div>
     </div>
   </div>
@@ -38,26 +42,30 @@ exports[`Test SystemMessage Component match mySelf snapshot 1`] = `
     class="text-message"
   >
     <div
-      class="show-time"
-      data-testid="time"
-    >
-      2021-10-16 15:29
-    </div>
-    <div
-      class="text-message-main text-message-isSelf"
+      class="user-message"
     >
       <div
-        class="text-message-main-text"
+        class="show-time"
+        data-testid="time"
       >
-        写一个类似微信渲染消息流的组件。支持不同类型：文本/图片/系统消息，如加某个人到群组里，撤销消息等。
+        2021-10-16 15:29
       </div>
       <div
-        class="avatar"
+        class="user-message-main user-message-isSelf"
       >
-        <img
-          alt=""
-          src="self_avatar.png"
-        />
+        <div
+          class="text-message-text text-message-isSelf"
+        >
+          写一个类似微信渲染消息流的组件。支持不同类型：文本/图片/系统消息，如加某个人到群组里，撤销消息等。
+        </div>
+        <div
+          class="avatar"
+        >
+          <img
+            alt=""
+            src="self_avatar.png"
+          />
+        </div>
       </div>
     </div>
   </div>

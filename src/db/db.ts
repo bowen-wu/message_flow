@@ -51,7 +51,7 @@ export const chatHistory: Message[] = [
   {
     id: '4',
     user: friend,
-    time: 1634370139889,
+    time: 1634369400000,
     type: MessageType.IMAGE,
     content:
       'https://www.ringcentral.com/content/dam/rc-www/en_us/images/content/why-rc-ent/whyrc_ent_image_4.png'
@@ -59,9 +59,23 @@ export const chatHistory: Message[] = [
   {
     id: '5',
     user: mySelf,
-    time: 1634370341970,
+    time: 1634369401970,
     type: MessageType.IMAGE,
     content:
       'https://www.ringcentral.com/content/dam/rc-www/cn/images/content/advantages/blade_3.png'
+  },
+  {
+    id: '6',
+    user: friend,
+    time: 1634369402850,
+    type: MessageType.TEXT,
+    content: 'deadline ？'
+  },
+  {
+    id: '7',
+    user: mySelf,
+    time: 1634382243837,
+    type: MessageType.TEXT,
+    content: '周末'
   }
 ];
