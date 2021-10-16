@@ -14,7 +14,14 @@ const MessageMap = {
 
 const App = () => {
   return (
-    <div className="App">{chatHistory.map((message) => MessageMap[message.type](message))}</div>
+    <div className="App">
+      {chatHistory.map((message, index) =>
+        MessageMap[message.type]({
+          message,
+          lastMessageTime: index === 0 ? 0 : chatHistory[index - 1].time
+        })
+      )}
+    </div>
   );
 };
 

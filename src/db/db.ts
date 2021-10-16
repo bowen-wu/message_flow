@@ -3,7 +3,7 @@ import SelfAvatar from '../assets/images/self_avatar.jpg';
 import { Message, MessageType, User } from './type';
 
 const friend: User = {
-  id: '2',
+  id: '19700102',
   avatar: FriendAvatar,
   alias: '小明',
   isOnline: true,
@@ -11,8 +11,8 @@ const friend: User = {
   port: 8080
 };
 
-const self: User = {
-  id: '0',
+export const self: User = {
+  id: '19700101',
   avatar: SelfAvatar,
   alias: '张三',
   isOnline: true,

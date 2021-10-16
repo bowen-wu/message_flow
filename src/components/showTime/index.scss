@@ -1,0 +1,6 @@
+@import '../../assets/styles/mixin';
+@import '../../assets/styles/variable';
+
+.show-time {
+  @include fontLineColor(16px, 20px, $systemColor);
+}
