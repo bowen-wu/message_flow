@@ -16,6 +16,8 @@ describe('Test ShowTime Component', () => {
   it('show null', () => {
     const now = Date.now();
     render(<ShowTime messageTime={now} lastMessageTime={now + 1000} />);
+    // eslint-disable-next-line no-console
+    console.log(dayjs(1634369400000).format(Formatting));
     expect(screen.getByTestId('time')).toBeEmptyDOMElement();
   });
 });
