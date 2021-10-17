@@ -7,7 +7,7 @@ import './index.scss';
 const sc = scopedClasses('avatar');
 
 interface AvatarProps {
-  user: User | undefined;
+  user?: User;
 }
 
 const Avatar = ({ user }: AvatarProps) => {

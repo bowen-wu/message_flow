@@ -1,5 +1,5 @@
 import React from 'react';
-import { render, fireEvent, screen } from '@testing-library/react';
+import { render, fireEvent, screen, cleanup, waitFor } from '@testing-library/react';
 import { MessageType } from '../../../db/type';
 import { friend } from '../../../db/db';
 import ImageMessage from '..';
@@ -19,14 +19,27 @@ describe('Test imageMessage Component', () => {
     return render(<ImageMessage message={message} lastMessageTime={lastMessageTime} />);
   };
 
+  afterEach(() => {
+    cleanup();
+  });
+
   it('match snapshot', () => {
     const { asFragment } = setup();
     expect(asFragment()).toMatchSnapshot();
   });
 
-  it('image on click', () => {
+  it('image on click', async () => {
     setup();
+    expect(screen.queryByTestId('imageMessage-model-image')).toBeNull();
+
     fireEvent.click(screen.getByTestId('imageMessage-img'));
-    expect(screen.getByTestId('imageMessage-model-image')).toBeInTheDocument();
+    await waitFor(() => {
+      expect(screen.getByTestId('imageMessage-model-image')).toBeInTheDocument();
+    });
+
+    fireEvent.click(screen.getByRole('dialog'));
+    await waitFor(() => {
+      expect(screen.queryByTestId('imageMessage-model-image')).toBeNull();
+    });
   });
 });

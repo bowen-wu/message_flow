@@ -33,6 +33,7 @@ const ImageMessage = (props: MessagePropsBase) => {
         footer={null}
         visible={isModalVisible}
         onCancel={() => setIsModalVisible(false)}
+        destroyOnClose
       >
         <div className={sc('model')}>
           <img data-testid="imageMessage-model-image" src={message.content} alt="" />

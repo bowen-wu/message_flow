@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test Avatar match snapshot for is friend 1`] = `
+<DocumentFragment>
+  <div
+    class="user-message "
+  >
+    <div
+      class="show-time"
+      data-testid="time"
+    >
+      2021-10-16 15:29
+    </div>
+    <div
+      class="user-message-main"
+    >
+      <div
+        class="avatar"
+      >
+        <img
+          alt=""
+          src="friend_avatar.jpg"
+        />
+      </div>
+      <div>
+        Hi!我是张三
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Test Avatar match snapshot for is self 1`] = `
+<DocumentFragment>
+  <div
+    class="user-message user-message-isSelf"
+  >
+    <div
+      class="show-time"
+      data-testid="time"
+    >
+      2021-10-16 15:29
+    </div>
+    <div
+      class="user-message-main"
+    >
+      <div>
+        Hi!我是张三
+      </div>
+      <div
+        class="avatar"
+      >
+        <img
+          alt=""
+          src="self_avatar.png"
+        />
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
