@@ -1,5 +1,5 @@
 import React from 'react';
-import dayjs from 'dayjs';
+import dayjs from '../../utils/dayjs';
 import scopedClasses from '../../utils/scopedClasses';
 
 import './index.scss';
@@ -13,7 +13,7 @@ interface ShowTimeProps {
   lastMessageTime: number;
 }
 
-const ShowTime = ({ messageTime, lastMessageTime }: ShowTimeProps) => {
+const ShowTime = ({ messageTime, lastMessageTime }: ShowTimeProps): JSX.Element => {
   return (
     <div className={sc()} data-testid="time">
       {messageTime - lastMessageTime > ShowTimeLimit ? dayjs(messageTime).format(Formatting) : null}

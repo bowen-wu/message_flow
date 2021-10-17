@@ -12,7 +12,11 @@ interface UserMessageProps extends MessagePropsBase {
   messageWidget: ReactNode;
 }
 
-const UserMessage = ({ message, lastMessageTime, messageWidget }: UserMessageProps) => {
+const UserMessage = ({
+  message,
+  lastMessageTime,
+  messageWidget
+}: UserMessageProps): JSX.Element => {
   const isSelf = message.user?.id === mySelf.id;
   return (
     <div className={`${sc()} ${sc({ isSelf: message.user?.id === mySelf.id })}`}>

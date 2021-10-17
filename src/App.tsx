@@ -13,7 +13,7 @@ const MessageMap = {
   [MessageType.IMAGE]: ImageMessage
 };
 
-const App = () => {
+const App = (): JSX.Element => {
   return (
     <div className="App">
       {chatHistory.map((message, index) =>

@@ -4,7 +4,7 @@ interface AttributeInterface {
 
 const scopedClasses =
   (prefixClassName: string) =>
-  (name: AttributeInterface | string = '') => {
+  (name: AttributeInterface | string = ''): string => {
     if (name instanceof Object) {
       if (Object.keys(name).some((item) => item === '')) {
         throw new Error(`${prefixClassName} Object key is Truthy`);

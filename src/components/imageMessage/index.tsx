@@ -8,7 +8,7 @@ import './index.scss';
 
 const sc = scopedClasses('image-message');
 
-const ImageMessage = (props: MessagePropsBase) => {
+const ImageMessage = (props: MessagePropsBase): JSX.Element => {
   const { message } = props;
   const [isModalVisible, setIsModalVisible] = useState(false);
 

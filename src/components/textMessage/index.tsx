@@ -7,7 +7,7 @@ import './index.scss';
 
 const sc = scopedClasses('text-message');
 
-const TextMessage = (props: MessagePropsBase) => {
+const TextMessage = (props: MessagePropsBase): JSX.Element => {
   const { message } = props;
   return (
     <div className={sc()} key={message.id}>

@@ -10,7 +10,7 @@ interface AvatarProps {
   user?: User;
 }
 
-const Avatar = ({ user }: AvatarProps) => {
+const Avatar = ({ user }: AvatarProps): JSX.Element => {
   return (
     <div className={sc()}>
       <img src={user ? user.avatar : Default} alt="" />

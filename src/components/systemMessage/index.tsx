@@ -6,7 +6,7 @@ import './index.scss';
 
 const sc = scopedClasses('system-message');
 
-const SystemMessage = ({ message, lastMessageTime }: MessagePropsBase) => {
+const SystemMessage = ({ message, lastMessageTime }: MessagePropsBase): JSX.Element => {
   return (
     <div className={sc()} key={message.id}>
       <ShowTime messageTime={message.time} lastMessageTime={lastMessageTime} />
