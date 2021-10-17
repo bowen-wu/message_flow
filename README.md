@@ -30,7 +30,16 @@ yarn build
 
 ## Description
 
+这是一个类似微信的渲染消息流的组件。
+
+支持不同类型 
+
+- 文本 
+- 图片 
+- 系统消息，例如加好友
+
 ### Link
+
 - GitHub: https://github.com/bowen-wu/message_flow
 - Preview: http://121.43.173.94/index.html
 
@@ -43,6 +52,7 @@ React + TS + Ant Design + Sass + Lint(Husky + Eslint + Prettier 等) + Test Libr
 Image Modal 可以放置在最外层，点击后，将 messageHistory filter 进去，之后在将点击的 message 传入进去，可以做个 Carousel
 
 ### 技术点
+
 1. 组件化
 2. Unit Test
 3. Continuous Integration
