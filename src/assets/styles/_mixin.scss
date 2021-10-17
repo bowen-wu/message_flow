@@ -8,7 +8,6 @@
   color: $color;
   font-size: $fontSize;
   line-height: $lineHeight;
-  white-space: nowrap;
 }
 
 @mixin widthHeight($width: 100%, $height: 100%) {
