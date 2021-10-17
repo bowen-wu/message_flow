@@ -10,7 +10,7 @@ const sc = scopedClasses('text-message');
 const TextMessage = (props: MessagePropsBase) => {
   const { message } = props;
   return (
-    <div className={sc()}>
+    <div className={sc()} key={message.id}>
       <UserMessage
         {...props}
         messageWidget={

@@ -4,6 +4,7 @@ import { MessageType } from './db/type';
 import SystemMessage from './components/systemMessage';
 import TextMessage from './components/textMessage';
 import ImageMessage from './components/imageMessage';
+import 'antd/dist/antd.css';
 import './App.scss';
 
 const MessageMap = {

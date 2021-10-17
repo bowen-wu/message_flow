@@ -1,20 +1,29 @@
 @import '../../assets/styles/mixin';
 @import '../../assets/styles/variable';
 
+@mixin image($maxWidth: 320px) {
+  max-width: $maxWidth;
+
+  img {
+    vertical-align: top;
+    max-width: 100%;
+  }
+}
+
 .image-message {
   &-image {
-    max-width: 320px;
     margin-left: 12px;
     border: 1px solid #efefef;
-
-    img {
-      vertical-align: top;
-      max-width: 100%;
-    }
+    @include image();
+    cursor: pointer;
 
     &.image-message-isSelf {
       margin-left: 0;
       margin-right: 12px;
     }
   }
+}
+
+.image-message-model {
+  @include image(520px);
 }

@@ -8,7 +8,7 @@ const sc = scopedClasses('system-message');
 
 const SystemMessage = ({ message, lastMessageTime }: MessagePropsBase) => {
   return (
-    <div className={sc()}>
+    <div className={sc()} key={message.id}>
       <ShowTime messageTime={message.time} lastMessageTime={lastMessageTime} />
       <div className={sc('text')}>{message.content}</div>
     </div>
