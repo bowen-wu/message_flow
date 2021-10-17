@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Test imageMessage Component match snapshot 1`] = `
+<DocumentFragment>
+  <div
+    class="image-message"
+  >
+    <div
+      class="user-message "
+    >
+      <div
+        class="show-time"
+        data-testid="time"
+      >
+        2021-10-16 15:30
+      </div>
+      <div
+        class="user-message-main"
+      >
+        <div
+          class="avatar"
+        >
+          <img
+            alt=""
+            src="friend_avatar.jpg"
+          />
+        </div>
+        <div
+          class="image-message-image"
+          data-testid="imageMessage-img"
+        >
+          <img
+            alt=""
+            src="https://www.ringcentral.com/content/dam/rc-www/en_us/images/content/why-rc-ent/whyrc_ent_image_4.png"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;

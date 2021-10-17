@@ -4,7 +4,7 @@ import { MessageType } from '../../../db/type';
 import TextMessage from '../index';
 import { friend, mySelf } from '../../../db/db';
 
-describe('Test SystemMessage Component', () => {
+describe('Test TextMessage Component', () => {
   it('match friend snapshot', () => {
     const time = 1634369395757;
     const lastMessageTime = time - 4 * 60 * 1000;

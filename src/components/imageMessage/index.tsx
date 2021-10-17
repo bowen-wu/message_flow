@@ -18,6 +18,7 @@ const ImageMessage = (props: MessagePropsBase) => {
         {...props}
         messageWidget={
           <div
+            data-testid="imageMessage-img"
             className={sc({ image: true, isSelf: message.user?.id === mySelf.id })}
             onClick={() => setIsModalVisible(() => true)}
           >
@@ -34,7 +35,7 @@ const ImageMessage = (props: MessagePropsBase) => {
         onCancel={() => setIsModalVisible(false)}
       >
         <div className={sc('model')}>
-          <img src={message.content} alt="" />
+          <img data-testid="imageMessage-model-image" src={message.content} alt="" />
         </div>
       </Modal>
     </div>

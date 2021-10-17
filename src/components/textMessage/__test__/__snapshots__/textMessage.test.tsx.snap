@@ -1,12 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Test SystemMessage Component match friend snapshot 1`] = `
+exports[`Test TextMessage Component match friend snapshot 1`] = `
 <DocumentFragment>
   <div
     class="text-message"
   >
     <div
-      class="user-message"
+      class="user-message "
     >
       <div
         class="show-time"
@@ -36,13 +36,13 @@ exports[`Test SystemMessage Component match friend snapshot 1`] = `
 </DocumentFragment>
 `;
 
-exports[`Test SystemMessage Component match mySelf snapshot 1`] = `
+exports[`Test TextMessage Component match mySelf snapshot 1`] = `
 <DocumentFragment>
   <div
     class="text-message"
   >
     <div
-      class="user-message"
+      class="user-message user-message-isSelf"
     >
       <div
         class="show-time"
@@ -51,7 +51,7 @@ exports[`Test SystemMessage Component match mySelf snapshot 1`] = `
         2021-10-16 15:29
       </div>
       <div
-        class="user-message-main user-message-isSelf"
+        class="user-message-main"
       >
         <div
           class="text-message-text text-message-isSelf"
