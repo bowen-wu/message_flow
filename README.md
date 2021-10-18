@@ -41,7 +41,6 @@ yarn build
 ### Link
 
 - GitHub: https://github.com/bowen-wu/message_flow
-- Preview: http://121.43.173.94/index.html
 
 ### 技术栈
 
