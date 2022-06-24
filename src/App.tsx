@@ -1,23 +1,21 @@
 import React from 'react';
 import { chatHistory } from './db/db';
 import { MessageType } from './db/type';
-import SystemMessage from './components/systemMessage';
-import TextMessage from './components/textMessage';
-import ImageMessage from './components/imageMessage';
 import 'antd/dist/antd.css';
 import './App.scss';
+import { Image, render, System, Text } from './components/polymorphic';
 
 const MessageMap = {
-  [MessageType.SYSTEM]: SystemMessage,
-  [MessageType.TEXT]: TextMessage,
-  [MessageType.IMAGE]: ImageMessage
+  [MessageType.SYSTEM]: System,
+  [MessageType.TEXT]: Text,
+  [MessageType.IMAGE]: Image
 };
 
 const App = (): JSX.Element => {
   return (
     <div className="App">
       {chatHistory.map((message, index) =>
-        MessageMap[message.type]({
+        render(MessageMap[message.type], {
           message,
           lastMessageTime: index === 0 ? 0 : chatHistory[index - 1].time
         })

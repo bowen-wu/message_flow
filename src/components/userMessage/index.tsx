@@ -8,7 +8,7 @@ import './index.scss';
 
 const sc = scopedClasses('user-message');
 
-interface UserMessageProps extends MessagePropsBase {
+export interface UserMessageProps extends MessagePropsBase {
   messageWidget: ReactNode;
 }
 
